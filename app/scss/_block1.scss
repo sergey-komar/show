@@ -1,0 +1,197 @@
+.header{
+    background-image: url('../images/block-1/bg-1.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    min-height: 100vh;
+}
+
+
+.header__inner-menu {
+   position: relative;
+}
+.header__inner-menu::before{
+    content: '';
+    position: absolute;
+    width: 97px;
+    height: 328px;
+    background-image: url('../images/block-1/sun.png');
+    background-repeat: no-repeat;
+    left: 49.5%;
+    top: 0;
+}
+.header__inner-top {
+    padding-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+.header__inner-name {
+    font-size: 12px;
+    line-height: 14px;
+    color: $color-black;
+    @extend %narrow-400;
+}
+.header__inner-phone {
+    font-size: 17px;
+    line-height: 23px;
+    color: $color-white;
+    text-decoration: underline;
+}
+.menu {
+    margin-bottom: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.menu__list {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.menu__list-item{
+    margin-left: 55px;
+}
+.menu__list-item:first-child{
+    margin-left: 0;
+}
+
+.menu__list-link {
+    font-size: 18px;
+    line-height: 24px;
+    color: $color-violet;
+    position: relative;
+}
+.menu__list-link::before{
+    content: '';
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    background-image: url('../images/block-1/star.svg');
+    background-repeat: no-repeat;
+    left:-30px;
+    top: 2px;
+}
+
+.header__inner-btn {
+    padding: 10px 25px;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    background-color: #ACD34C;
+    color: #557013;
+    font-size: 17px;
+    line-height: 23px;
+    cursor: pointer;
+}
+
+.header-center__content {
+    width: 623px;
+}
+.header-center__content-subtitle {
+    margin-bottom: 30px;
+    font-size: 30px;
+    line-height: 40px;
+    color: $color-black;
+}
+.header-center__content-title {
+    margin-bottom: 18px;
+    width: 580px;
+    font-size: 48px;
+    line-height: 110%;
+    text-align: center;
+    color: $color-red;
+    @extend %round-700;
+}
+.header-center__content-text {
+    margin-bottom: 45px;
+    font-size: 22px;
+    line-height: 28px;
+    text-align: center;
+    @extend %roboto-700;
+    color: #433992;
+}
+.header-center__content-desc {
+    margin-bottom: 12px;
+    font-size: 16px;
+    line-height: 21px;
+    text-align: center;
+    color: $color-black;
+}
+
+.header__form {
+    width: 325px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.header__form-input {
+    padding: 19px 51px;
+    margin-bottom: 25px;
+    width: 325px;
+    background: #FFFFFF;
+    border: 3px solid #2175A4;
+    border-radius: 20px; 
+    color: #2175A4;
+}
+.header__form-before,
+.header__form-after{
+   position: relative;
+}
+.header__form-before::before,
+.header__form-after::after{
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-repeat: no-repeat;  
+}
+.header__form-before::before{
+    background-image: url('../images/block-1/user.svg');
+    left: 20px;
+    top: 1px;
+}
+.header__form-after::after{
+    background-image: url('../images/block-1/phone-call\ 2.svg');
+    left: 20px;
+    top: 0;
+}
+
+.header__form-input::placeholder{
+    font-size: 18px;
+    line-height: 24px;
+    color: #2175A4;
+}
+.header__form-btn {
+    width: 325px;
+    padding: 19px 20px 19px 100px;
+    font-size: 18px;
+    line-height: 24px;
+    color: $color-black;
+    @extend %roboto-700;
+    background: #ACD34C;
+    border-radius: 20px;
+    border: none;
+    border-bottom: 4px solid #557013;
+    cursor: pointer;
+    position: relative;
+}
+.header__form-btn::before{
+    content: '';
+    position: absolute;
+    width: 134px;
+    height: 134px;
+    background-image: url('../images/block-1/book.png');
+    top: -50px;
+    left: -40px;
+}
+
+
+.header-center__popup img {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -20%;
+}

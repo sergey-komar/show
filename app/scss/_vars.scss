@@ -1,29 +1,26 @@
-%arial-400{
-    font-family: 'arial';
+$color-red: #E43030;
+$color-violet: #60387E;
+$violet-title: #7E75DF;
+$color-white: #fff;
+$color-black: #414042;
+
+
+%roboto-700{
+    font-family: 'Roboto-Bold';
+    font-weight: 700;
+}
+
+%narrow-400{
+    font-family: 'PTSansNarrow-Regular';
     font-weight: 400;
 }
 
-%boorsok-400{
-    font-family:  'boorsok';
-    font-weight: 400;
+%round-500{
+    font-family: 'MPLUSRounded1c-Medium';
+    font-weight: 500;
 }
 
-%nokia-400{
-    font-family: 'nokia';
-    font-weight: 400;
-}
-
-%palatino-400{
-    font-family: 'palatino';
-    font-weight: 400;
-}
-
-%rounded-400{
-    font-family: 'rounded', sans-serif;
-    font-weight: 400;
-}
-
-%fruktur-400{
-    font-family: 'Fruktur-Regular';
-    font-weight: 400;
+%round-700{
+    font-family: 'MPLUSRounded1c-Bold';
+    font-weight: 700;
 }

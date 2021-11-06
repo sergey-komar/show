@@ -41,6 +41,7 @@ function images() {
 function scripts() {
   return src([
     'node_modules/jquery/dist/jquery.js',
+    'node_modules/magnific-popup/dist/jquery.magnific-popup.js',
     'app/js/main.js'
   ])
     .pipe(concat('main.min.js'))
@@ -48,6 +49,7 @@ function scripts() {
     .pipe(dest('app/js'))
     .pipe(browserSync.stream())
 }
+
 
 
 function styles() {

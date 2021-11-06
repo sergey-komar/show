@@ -1,13 +1,10 @@
 html,
 body {
 	height: 100%;
+  color: #60387E;
+  @extend %round-500;
 }
 
-.wrapper {
-	display: flex;
-	flex-direction: column;
-	min-height: 100%;
-}
 
 .main {
 	flex: 1 0 auto;
@@ -17,9 +14,15 @@ body {
 }
 
 .container{
-  max-width: 1200px;
+  max-width: 1390px;
   margin: 0 auto;
   padding: 0 15px;
+}
+
+.double__container {
+  max-width: 1870px;
+  padding: 0 15px;
+  margin: 0 auto;
 }
 
 
