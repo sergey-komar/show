@@ -1,0 +1,113 @@
+.super-program {
+    padding-top: 138px;
+    padding-bottom: 80px;
+    background-image: url(../images/block-3/bg-3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.super-program__title {
+    margin-bottom: 15px;
+    font-size: 40px;
+    line-height: 45px;
+    text-align: center;
+    color: $violet-title;
+    @extend %roboto-700;
+}
+.super-program__subtitle {
+    max-width: 1038px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 30px;
+    line-height: 40px;
+    color: #60387E;
+    @extend %round-700;
+    
+}
+
+
+.super-program__slider-thumb-text {
+    margin-bottom: 23px;
+    text-align: center;
+}
+
+.super-program__slider-big {
+    margin-bottom: 44px;
+}
+.super-program__slider-big-item {
+    display: flex !important;
+    width: 1300px !important;
+   
+}
+.super-program__slider-big-box{
+    width: 537px;
+    margin-left: 34px;
+}
+.super-program__slider-big-title {
+    margin-bottom: 23px;
+    font-size: 30px;
+    line-height: 40px;
+    color: #7E75DF;
+    @extend %round-500;
+}
+.super-program__slider-big-text {
+    margin-bottom: 15px;
+    font-size: 16px;
+    line-height: 21px;
+    @extend %round-500;
+    color: #60387E;
+}
+
+.super-program__slider-big-link {
+    margin-bottom: 12px;
+    font-size: 16px;
+    line-height: 21px;
+    color: #60387E;
+}
+.super-program__slider-big-link:last-child{
+    margin-bottom: 20px;
+}
+
+.super-program__slider-big-input {
+    width: 325px;
+    padding: 17px 51px;
+    background: #FFFFFF;
+    border: 3px solid #2175A4;
+    border-radius: 20px;
+}
+.super-program__slider-big-input::placeholder{
+    color: #2175A4;
+}
+.super-program__slider-big-btn {
+    padding: 18px 30px;
+    margin-left: 23px;
+    font-size: 18px;
+    line-height: 24px;
+    border: none;
+    text-transform: uppercase;
+    color: #536821;
+    background-color: #ACD34C;
+    border-bottom: 2px solid #536821;
+    border-radius: 20px;
+}
+.super-program__btn{
+    padding: 18px 40px;
+    margin-left: 60px;
+    font-size: 18px;
+    line-height: 24px;
+    color: #000000;
+    background: #FFFFFF;
+    border: 3px solid #DC4955;
+    border-bottom: 6px solid #DC4955;
+    box-sizing: border-box;
+    border-radius: 20px;
+}
+.slider__arrow-l,
+.slider__arrow-r{
+    position: absolute;
+    top: -107px;
+}
+.slider__arrow-r{
+    right: 15px;
+}

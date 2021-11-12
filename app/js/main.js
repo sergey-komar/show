@@ -1,6 +1,6 @@
 $(function () {
-// POPUP
 
+	// POPUP
 $('.header-center__popup').magnificPopup({
     disableOn: 700,
 		type: 'iframe',
@@ -11,5 +11,37 @@ $('.header-center__popup').magnificPopup({
 		fixedContentPos: false
 });
 
+
+// SLIDER BLOCK-2
+	$('.slider__box').slick({
+		prevArrow: ' <img src="./images/block-2/arrow-left.png" class="slider__arrow-left" alt="">',
+		nextArrow: '<img src="./images/block-2/arrow-rigth.png" class="slider__arrow-rigth" alt="">',
+		slidesToShow: 3,
+  		slidesToScroll: 1,
+		//   centerMode: true,
+		dots: true
+	})
+
+
+// SLIDER BLOCK-3
+	$('.super-program__slider-big').slick({
+		prevArrow: ' <img src="./images/block-2/arrow-left.png" class="slider__arrow-l" alt="">',
+		nextArrow: '<img src="./images/block-2/arrow-rigth.png" class="slider__arrow-r" alt="">',
+		slidesToShow: 1,
+		slidesToScroll: 1,
+		fade: true,
+		asNavFor: '.super-program__slider-thumb'
+	});
+
+	$('.super-program__slider-thumb').slick({
+		
+		slidesToShow: 5,
+		slidesToScroll: 1,
+		asNavFor: '.super-program__slider-big',
+		dots:false,
+		arrows: false,
+		centerMode: true,
+		focusOnSelect: true
+	  });
 
 })
