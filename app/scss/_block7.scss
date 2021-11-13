@@ -1,0 +1,112 @@
+.newyear{
+    padding-top: 95px;
+    padding-bottom: 85px;
+    background-image: url('../images/block7/block7-bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.newyear__title {
+    margin-bottom: 40px;
+    font-size: 40px;
+    line-height: 45px;
+    text-align: center;
+    @extend %roboto-700;
+    color: #D82F3C;
+}
+.newyear__content {
+    display: flex;
+    justify-content: space-between;
+}
+.newyear__content-box {
+    width: 700px;
+}
+.newyear__content-title {
+    margin-bottom: 30px;
+    width: 702px;
+    font-size: 30px;
+    line-height: 40px;
+    color: #414042;    
+}
+.newyear__content-text {
+    margin-bottom: 50px;
+    font-size: 16px;
+    line-height: 21px;
+    color: #414042;
+}
+.newyear__content-block {
+    display: flex;
+    justify-content: space-between;
+}
+.newyear__content-list {
+    width: 200px;
+}
+.newyear__content-item {
+    margin-bottom: 12px;
+    font-size: 16px;
+    line-height: 21px;
+    color: #414042;
+    position: relative;
+}
+.newyear__content-item::before{
+    content: '';
+    position: absolute;
+    width: 19px;
+    height: 19px;
+    background-image: url('../images/block7/Star\ 16.svg');
+    background-repeat: no-repeat;
+    left: -23px;
+    top: 3px;
+
+}
+.newyear__content-form {
+    width: 330px;
+}
+.newyear__content-input::placeholder {
+    font-size: 18px;
+    line-height: 24px;
+    color: #2175A4;
+}
+.newyear__content-form-text {
+    margin-bottom: 25px;
+    font-size: 12px;
+    line-height: 14px;
+    color: #414042;
+}
+.newyear__content-btn {
+    padding: 18px 34px;
+    font-size: 18px;
+    line-height: 24px;
+    text-transform: uppercase;
+    border: none;
+    color: #536821;
+    background: #ACD34C;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.newyear__content-clown {
+    height: 600px;
+}
+.newyear__content-picture {
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: center;
+    column-gap: 20px;
+}
+
+.newyear__content-button {
+    padding: 18px 39px;
+    font-weight: normal;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 18px;
+    border: none;
+    line-height: 24px;
+    color: #FFFFFF;
+    background: #D82F3C;
+    border-bottom: 5px solid #2175A4;
+    border-radius: 20px;
+    text-align: center;
+    cursor: pointer;
+}

@@ -1,0 +1,43 @@
+.holiday {
+    padding-top: 80px;
+    padding-bottom: 60px;
+    background-image: url('../images/block-4/block4-bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.double__container {
+}
+.container {
+}
+.holiday__title {
+    margin-bottom: 56px;
+    font-size: 40px;
+    line-height: 45px;
+    text-align: center;
+    color: #7E75DF;
+    @extend %roboto-700;
+}
+.holiday__subtitle {
+    font-size: 30px;
+    line-height: 40px;
+    text-align: center;
+    @extend %round-500;
+    color: #414042;
+    
+}
+.holiday__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.holiday__img img{
+    object-fit: cover;
+}
+.holiday__text {
+    font-size: 30px;
+    line-height: 40px;
+    @extend %narrow-400;
+    color: #414042;
+    text-align: center;
+}

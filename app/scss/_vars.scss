@@ -24,3 +24,13 @@ $color-black: #414042;
     font-family: 'MPLUSRounded1c-Bold';
     font-weight: 700;
 }
+
+%button-input{
+    padding: 19px 51px;
+    margin-bottom: 25px;
+    width: 325px;
+    background: #FFFFFF;
+    border: 3px solid #2175A4;
+    border-radius: 20px; 
+    color: #2175A4;
+}
