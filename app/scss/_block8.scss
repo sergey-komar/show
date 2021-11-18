@@ -1,0 +1,150 @@
+.scenery {
+    padding-top: 116px;
+    padding-bottom: 100px;
+    background-image: url('../images/block-8/block8-bgg.jpg');
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: cover;
+}
+.double__container {
+}
+.scenery__title {
+    width: 386px;
+    margin-bottom: 15px;
+    font-size: 40px;
+    line-height: 45px;
+    margin-left: auto;
+    margin-right: auto;
+    color: $violet-title;
+    @extend %roboto-700;
+}
+.scenery__subtitle {
+    max-width: 550px;
+    font-size: 30px;
+    line-height: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    color: $color-black;
+    @extend %round-700;
+}
+.scenery__subtitle span {
+    color: $color-red;
+}
+.scenery__images{
+    margin-top: -100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.scenery__content {
+    margin-top: -200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+}
+.scenery__content-desc {
+    width: 307px;
+    font-size: 16px;
+    line-height: 21px;
+    color: #FFFFFF;
+    position: relative;
+}
+.scenery__content-desc::before{
+    content: '';
+    position: absolute;
+    background-image:url('../images/block-8/Vector.png');
+    background-repeat:no-repeat;
+    z-index: 0;
+    width: 650px;
+    left: -90px;
+    top: -100px;
+    height: 650px;
+}
+.scenery__content-img{
+    position: relative;
+}
+.scenery__content-desc p{
+    margin-bottom: 15px;
+    position: relative;
+}
+.scenery__content-list {
+    position: relative;
+}
+.scenery__content-item {
+    margin-bottom: 15px;
+    position: relative;
+}
+.scenery__content-item::before{
+    content: '';
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    background-image: url('../images/block-8/blog8-star.svg');
+    background-repeat: no-repeat;
+    left: -30px;
+    top: 3px;
+}
+.scenery__bottom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.scenery__bottom-text {
+    width: 380px;
+    font-size: 16px;
+    line-height: 21px;
+    color: #716ABC;
+}
+.scenery__bottom-btn {
+    padding: 18px 38px;
+    border: none;
+    font-size: 18px;
+    line-height: 24px;
+    color: #000000;
+    background: #FFFFFF;
+    border-radius: 20px;
+    cursor: pointer;
+    border-bottom: 4px solid $color-red;
+}
+.supero{
+    padding-top: 67px;
+    padding-bottom: 84px;
+    background-image: url('../images/block-8/Frame\ 3.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+}
+.supero__content {
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.supero__box-title {
+    margin-bottom: 10px;
+    width: 700px;
+    font-size: 40px;
+    line-height: 45px;
+    color: $violet-title;
+    @extend %roboto-700;
+}
+.supero__box-subtile {
+    font-size: 30px;
+    line-height: 40px;
+    color: $color-black;
+    @extend %round-700;
+}
+.supero__form-input {
+    margin-right: 20px;
+}
+.supero__box-text {
+    width: 280px;
+    font-size: 12px;
+    line-height: 14px;
+    color: #000000;
+}
+
+

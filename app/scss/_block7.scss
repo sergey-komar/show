@@ -83,6 +83,7 @@
     background: #ACD34C;
     border-radius: 20px;
     cursor: pointer;
+    border-bottom: 4px solid #536821;
 }
 .newyear__content-clown {
     height: 600px;
@@ -109,4 +110,57 @@
     border-radius: 20px;
     text-align: center;
     cursor: pointer;
+}
+
+.newyearquestions{
+    padding-top: 10px;
+    background-image: url('../images/block7/SuperShow-bg.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.newyear-questions {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.newyear-questions__title {
+    margin-bottom: 15px;
+    font-size: 40px;
+    line-height: 45px;
+    color: $violet-title;
+    @extend %roboto-700;
+}
+.newyear-questions__subtitle {
+    margin-bottom: 41px;
+    font-size: 30px;
+    line-height: 40px;
+    color: #414042;
+    @extend %round-700;
+}
+.newyear-questions__text {
+    margin-bottom: 44px;
+    font-size: 16px;
+    line-height: 21px;
+    color: #414042;
+    @extend %round-500;
+}
+
+.newyear-questions__input::placeholder{
+    font-size: 18px;
+    line-height: 24px;
+    color: #2175A4;
+}
+.newyear-questions__button {
+    margin-left: 20px;
+}
+
+.newyear-questions__policy {
+    width: 282px;
+    text-decoration: underline;
+    font-size: 12px;
+    line-height: 14px;
+    color: #414042;
+    @extend %round-500;
 }

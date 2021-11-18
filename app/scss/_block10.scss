@@ -1,0 +1,78 @@
+.super-quests{
+    padding-top: 138px;
+    padding-bottom: 80px;
+    background-image: url(../images/block-3/bg-3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.super-quests__title {
+    margin-bottom: 15px;
+    font-size: 40px;
+    line-height: 45px;
+    text-align: center;
+    color: $violet-title;
+    @extend %roboto-700;
+}
+.super-quests__subtitle {
+    font-size: 30px;
+    line-height: 40px;
+    text-align: center;
+    color: #60387E;
+    @extend %round-700;
+}
+
+.super-quests__slider-thumb-text {
+    margin-bottom: 23px;
+    text-align: center;
+}
+
+.super-quests__slider-big {
+    margin-bottom: 44px;
+}
+.super-quests__slider-big-item {
+    display: flex !important;
+    width: 1300px !important;
+}
+.super-quests__slider-big-box {
+    width: 537px;
+    margin-left: 34px;
+}
+.super-quests__slider-big-title {
+    margin-bottom: 23px;
+    font-size: 30px;
+    line-height: 40px;
+    color: #7E75DF;
+    @extend %round-500;
+}
+.super-quests__slider-big-text {
+    margin-bottom: 15px;
+    font-size: 16px;
+    line-height: 21px;
+    @extend %round-500;
+    color: #60387E;
+}
+.super-quests__slider-big-list {
+}
+.super-quests__slider-big-link {
+    margin-bottom: 12px;
+    font-size: 16px;
+    line-height: 21px;
+    color: #60387E;
+    position: relative;
+}
+.super-quests__slider-big-link::before{
+    content: '';
+    position: absolute;
+    width: 19px;
+    height: 19px;
+    background-image: url('../images/block7/Star\ 16.svg');
+    background-repeat: no-repeat;
+    left: -20px;
+    top: 3px;
+}
+.super-quests__btn{
+    @extend %btn;
+    margin-left: 60px;
+}
+
