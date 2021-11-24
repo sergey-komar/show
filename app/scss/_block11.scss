@@ -1,0 +1,72 @@
+.master {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-image: url('../images/block11/block11-bg.jpg');
+    background-position:  center right ;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.master__title {
+    margin-bottom: 30px;
+    font-size: 40px;
+    line-height: 45px;
+    text-align: center;
+    color: #F4FFB4;
+    @extend %roboto-700;
+}
+.master__subtitle {
+    margin-bottom: 23px;
+    font-size: 30px;
+    line-height: 40px;
+    text-align: center;
+    color: #FCFF7C;
+    @extend %round-700;
+}
+.master__text {
+    max-width: 537px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    line-height: 21px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    @extend %round-500;
+    color: #FFFFFF;
+}
+.master__desc {
+    font-size: 16px;
+    line-height: 21px;
+    text-align: center;
+    @extend %round-500;
+    color: #FCFF7C;
+}
+.master__slider .slick-dots{
+    margin-bottom: 70px;
+    position: static;
+    margin-left: auto;
+    margin-right: auto;
+    left: 50%;
+    right: 50%;
+    width: 200px;
+}
+.master__slider-box .slider__arrow-rigth{
+    top: 50%;
+}
+.master__slider-box .slider__arrow-left{
+    top: 50%;
+}
+.master__slider-text {
+    margin-bottom: 15px;
+    font-size: 22px;
+    line-height: 29px;
+    text-align: center;
+    @extend %round-500;
+    color: #FFFFFF;
+}
+
+.master__button {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}

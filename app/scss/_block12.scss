@@ -1,0 +1,111 @@
+.joy {
+    padding-top: 90px;
+    padding-bottom: 100px;
+    background-image: url('../images/block12/block12-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.joy__title {
+    margin-bottom: 25px;
+    font-size: 40px;
+    line-height: 45px;
+    text-align: center;
+    text-transform: uppercase;
+    color: $violet-title; 
+    @extend %roboto-700;   
+}
+.joy__subtitle {
+    margin-bottom: 70px;
+    width: 517px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 16px;
+    line-height: 21px;
+    text-align: center;
+    color: #000000;
+}
+.joy__content {
+    margin-bottom: 40px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 70px;
+    column-gap: 90px;
+}
+.joy__content-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.joy__content-card-title {
+    margin-bottom: 27px;
+    font-size: 22px;
+    line-height: 29px;
+    text-align: center;
+    color: #716ABC;
+
+}
+.joy__text {
+    margin-bottom: 20px;
+    font-size: 22px;
+    line-height: 29px;
+    text-align: center;
+    color: #716ABC;
+}
+.joy__button {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.costumes {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    background-image: url('../images/block12/block12-background.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.costumes__info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.costumes__images {
+}
+.costumes__content {
+    max-width: 500px;
+}
+.costumes__content-title {
+    margin-bottom: 15px;
+    font-size: 40px;
+    line-height: 45px;
+    color: $violet-title;
+    @extend %roboto-700;
+}
+.costumes__content-subtitle {
+    margin-bottom: 27px;
+    font-size: 30px;
+    line-height: 40px;
+    color: $color-black;
+    @extend %round-700;
+}
+.costumes__content-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.costumes__content-text {
+    width: 300px;
+    font-size: 16px;
+    line-height: 21px;
+    color: $color-black;
+    @extend %narrow-400;
+}
+.costumes__content-button {
+}
+.button {
+}

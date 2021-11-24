@@ -9,14 +9,12 @@
 .double__container {
 }
 .scenery__title {
-    width: 386px;
     margin-bottom: 15px;
     font-size: 40px;
     line-height: 45px;
-    margin-left: auto;
-    margin-right: auto;
     color: $violet-title;
     @extend %roboto-700;
+    text-align: center;
 }
 .scenery__subtitle {
     max-width: 550px;
@@ -24,6 +22,7 @@
     line-height: 40px;
     margin-left: auto;
     margin-right: auto;
+    text-align: center;
     color: $color-black;
     @extend %round-700;
 }

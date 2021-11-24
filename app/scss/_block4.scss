@@ -6,10 +6,7 @@
     background-size: cover;
     background-position: center;
 }
-.double__container {
-}
-.container {
-}
+
 .holiday__title {
     margin-bottom: 56px;
     font-size: 40px;
@@ -40,4 +37,31 @@
     @extend %narrow-400;
     color: #414042;
     text-align: center;
+}
+@media(max-width: 800px){
+    .holiday__content{
+        flex-direction: column;
+    }
+    .holiday__img{
+        display: none;
+    }
+    .holiday__img.holiday__img-active{
+        display: block;
+    }
+}
+@media(max-width: 450px){
+    .holiday__title{
+        margin-bottom: 0;
+        font-size: 24px;
+        line-height: 30px;
+    }
+    .holiday__subtitle{
+        font-size: 20px;
+    }
+    .holiday{
+        padding-top: 30px;
+    }
+    .holiday__text{
+        font-size: 24px;
+    }   
 }

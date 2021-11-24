@@ -1,0 +1,106 @@
+.footer {
+    background: #E5E5E5;
+}
+.double__container {
+}
+.footer__inner {
+    padding-top: 50px;
+    display: flex;
+    justify-content: space-around;
+    
+}
+.footer__name {
+    width: 165px;
+}
+.footer__name-title {
+    margin-bottom: 13px;
+    line-height: 21px;
+    text-align: center;
+    color: $color-black;
+}
+.footer__name-logo {
+   
+}
+.footer__name-copy,
+.footer__characters-item {
+    margin-top: 21px;
+    font-size: 16px;
+    line-height: 18px;
+    text-align: center;
+    color: $color-black;
+}
+.footer__characters {
+    width: 390px;
+    margin-left: 40px;
+}
+.footer__characters-item {
+    margin-top: 0;
+    margin-bottom: 64px;
+    text-align: left;
+    position: relative;
+}
+.footer__characters-item::before{
+    content: '';
+    position: absolute;
+    width: 55px;
+    height: 55px;
+    background-image: url('../images/footer/star-footer.png');
+    left: -60px;
+    top: -5px;
+}
+.footer__text {
+    width: 327px;
+}
+.footer__text-item {
+    margin-bottom: 5px;
+    font-size: 16px;
+    line-height: 21px;
+    color: #414042;
+}
+.footer__list {
+   width: 180px;
+}
+.footer__list-item,
+.footer__link-item {
+    margin-bottom: 40px;
+    font-size: 18px;
+    line-height: 24px;
+    color: #60387E;
+    position: relative;
+}
+.footer__list-item::before,
+.footer__link-item::before{
+    content: '';
+    position: absolute;
+}
+.footer__link {
+    width: 160px;
+}
+.footer__link-item {
+}
+.footer__contact {
+    width: 190px;
+}
+.footer__contact-phone {
+    display: inline-block;
+    margin-bottom: 25px;
+    font-size: 18px;
+    line-height: 24px;
+    color: $violet-title;
+}
+.footer__contact-social {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.footer__contact-social-instagram {
+}
+.footer__contact-social-youtube {
+}
+.footer__contact-social-whatsap {
+}
+.footer__contact-button {
+   padding: 5px 34px;
+}
+.button {
+}

@@ -1,0 +1,68 @@
+.instagram {
+    padding-top: 105px;
+    padding-bottom: 110px;
+    background-image: url('../images/block13/block13-bg.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.instagram__title {
+    margin-bottom: 14px;
+    font-size: 40px;
+    line-height: 45px;
+    text-align: center;
+    @extend %roboto-700;
+    color: #FFFFFF;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.instagram__subtitle {
+    margin-bottom: 40px;
+    font-size: 22px;
+    line-height: 28px;
+    text-align: center;
+    color: $color-white;
+    @extend %round-700;
+}
+.instagram__content {
+    margin-bottom: 70px;
+    display: flex;
+    justify-content: space-between;
+}
+.instagram__content-one {
+    width: 830px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+   
+}
+.instagram__content-one-img {
+}
+.instagram__content-two {
+    width: 830px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    column-gap: 20px;
+    
+}
+.instagram__content-two-img {
+}
+.instagram__content-one-center{
+    margin-top: 150px;
+}
+.instagram__info {
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.instagram__info-email {
+    font-size: 16px;
+    line-height: 21px;
+    text-align: center;
+    color: #2C3693;
+}

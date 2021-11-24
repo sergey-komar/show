@@ -7,15 +7,15 @@
     background-position: center;
 }
 
-.parents__title,
-.parents__title-span {
+.parents__title{
     margin-bottom: 39px;
-    width: 700px;
+    max-width: 700px;
     font-size: 40px;
     line-height: 45px;
     margin-left: auto;
     margin-right: auto;
     @extend %roboto-700;
+    text-align: center;
     text-transform: uppercase;
     color: #FFFFFF;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -41,8 +41,9 @@
 }
 
 .parents-content__popup {
-    background-image: url('../images/block-5/block5-popup.png');
-    width: 670px;
+    background-image: url('../images/block-5/Mask\ Group.png');
+    max-width: 670px;
+    width: 100%;
     height: 457px;
     display: flex;
     justify-content: center;
@@ -84,9 +85,7 @@
     left: 30px;
     top: 25px;
 }
-.parents-content__popup-desc-before{
 
-}
 .parents-content__box {
     display: flex;
     column-gap: 63px;
@@ -94,10 +93,10 @@
     justify-content: space-between;
     flex-wrap: wrap;
     position: relative;
-    width: 700px;
+    max-width: 700px;
 }
 .parents-content__block {
-    width: 169px;
+    max-width: 169px;
 }
 .parents-content__block-title {
     font-size: 72px;
@@ -135,5 +134,54 @@
 
 .button-input{
     @extend %button-input;
+}
+
+
+@media(max-width: 1050px){
+    .parents-content{
+        flex-direction: column;
+    }
+    .parents-content__box{
+        margin-top: 50px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }    
+}
+@media(max-width: 800px){
+    .parents-content__block-title{
+        font-size: 55px;
+    }
+}
+@media(max-width: 450px){
+    .parents-content__box{
+        display: none;
+    }
+    .parents{
+        padding-top: 25px;
+        padding-bottom: 15px;
+    } 
+    .parents__title{
+        font-size: 24px;
+        line-height: 34px;
+    }  
+    .parents__subtitle{
+        font-size: 20px;
+        line-height: 28px;
+        margin-bottom: 20px;
+    } 
+    .parents-content__popup-content{
+        display: none;
+    } 
+    .parents__desc{
+        margin-top: 15px;
+    }  
+    .parents__desc-img,
+    .parents__desc-email{
+        margin-left: 10px;
+    }    
+    .parents-content__popup{
+        height: 350px;
+        overflow-y: hidden;
+    }
 }
 
