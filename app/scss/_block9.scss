@@ -25,7 +25,7 @@
 }
 .performances__text {
     margin-bottom: 60px;
-    width: 800px;
+    max-width: 800px;
     font-size: 30px;
     line-height: 40px;
     text-align: center;
@@ -52,6 +52,7 @@
 }
 .performances__slider .slider__arrow-l{
     left: -20px;
+    z-index: 1000;
 }
    
 
@@ -83,10 +84,13 @@
     top: 3px;
 }
 .performances__content-center::before{
-    left: 36%;
+    left: 11%;
 }
 
 .performances__content-center {
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
     margin-bottom: 45px;
     font-size: 16px;
     line-height: 21px;
@@ -97,14 +101,14 @@
 }
 
 .performances__popup-block{
-    width: 670px;
+    max-width: 670px;
     margin-left: auto;
     margin-right: auto;
 }
 .performances__popup {
     background-image: url('../images/block-9/block9-popup.png');
     background-repeat: no-repeat;
-    width: 690px;
+    max-width: 690px;
     width: 100%;
     height: 457px;
    cursor: pointer;
@@ -122,4 +126,66 @@
     margin-left: auto;
     margin-right: auto;
     color: #FFFFFF;  
+}
+@media(max-width:1000px){
+    .performances__slider .slider__arrow-r{
+        right: 0px;
+    }
+    .performances__slider .slider__arrow-l{
+        left: 0px;
+    }
+}
+@media(max-width: 800px){
+    .performances__content{
+        flex-direction: column;
+        max-width: 230px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+@media(max-width: 500px){
+    .performances__text{
+        margin-bottom: 0;
+    }
+    .performances__content-center{
+        display: none;
+    }
+    .performances__content{
+        margin-top: 10px;
+    }
+    .performances__title{
+        margin-bottom: 30px;
+        font-size: 24px;
+        line-height: 30px;
+    }
+    .performances__subtitle{
+        font-size: 20px;
+        margin-bottom: 30px;
+        line-height: 24px;
+    }
+    .performances__text{
+        font-size: 18px;
+        line-height: 27px;
+    }
+    .performances__popup{
+        height: 375px;
+    }
+    .performances__popup-text{
+        font-size: 14px;
+    }
+    .performances{
+        padding-top: 70px;
+        padding-bottom: 60px;
+    }
+    .performances__slider .slider__arrow-r{
+        right: -10px;
+        top: 25%;
+        display: none;
+    }
+    .performances__slider .slider__arrow-l{
+        left: -10px;
+        top: 25%;
+        display: none;
+    }
+
 }

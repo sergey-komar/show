@@ -18,7 +18,7 @@
 }
 .joy__subtitle {
     margin-bottom: 70px;
-    width: 517px;
+    max-width: 517px;
     margin-left: auto;
     margin-right: auto;
     font-size: 16px;
@@ -74,8 +74,7 @@
     justify-content: space-between;
     align-items: center;
 }
-.costumes__images {
-}
+
 .costumes__content {
     max-width: 500px;
 }
@@ -105,7 +104,65 @@
     color: $color-black;
     @extend %narrow-400;
 }
-.costumes__content-button {
+
+@media(max-width:1000px){
+    .costumes__info{
+        flex-direction: column;
+    }
+    .costumes__content{
+        text-align: center;
+        margin-top: 15px;
+    }
 }
-.button {
+
+@media(max-width:768px){
+    .joy__content{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media(max-width:500px){
+    .joy__content{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .joy__title{
+        font-size: 24px;
+        line-height: 29px;
+    }
+    .joy__subtitle{
+        font-size: 20px;
+        line-height: 27px;
+    }
+    .joy__content-card-title{
+        font-size: 19px;
+    }
+    .joy__button{
+        font-size: 13px;
+        padding: 13px 38px;
+        width: 100%;
+    }
+    .joy__text{
+        font-size: 22px;
+        line-height: 27px;
+    }
+    .costumes__content-box{
+        display: block;
+    }
+    .costumes__content-text{
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .costumes__content-button{
+        margin-top: 20px;
+        width: 100%;
+    }
+    .costumes__content-title{
+        font-size: 25px;
+    }
+    .costumes__content-subtitle{
+        font-size: 22px;
+        line-height: 27px;
+    }
+    .costumes{
+        padding-bottom: 10px;
+    }
 }

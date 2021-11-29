@@ -34,17 +34,19 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
 }
 .scenery__content {
     margin-top: -200px;
     display: flex;
     justify-content: center;
     align-items: center;
+   flex-wrap: wrap;
     position: relative;
     z-index: 1;
 }
 .scenery__content-desc {
-    width: 307px;
+    max-width: 307px;
     font-size: 16px;
     line-height: 21px;
     color: #FFFFFF;
@@ -91,7 +93,7 @@
     align-items: center;
 }
 .scenery__bottom-text {
-    width: 380px;
+    max-width: 380px;
     font-size: 16px;
     line-height: 21px;
     color: #716ABC;
@@ -124,7 +126,7 @@
 }
 .supero__box-title {
     margin-bottom: 10px;
-    width: 700px;
+    max-width: 700px;
     font-size: 40px;
     line-height: 45px;
     color: $violet-title;
@@ -133,6 +135,7 @@
 .supero__box-subtile {
     font-size: 30px;
     line-height: 40px;
+    max-width: 700px;
     color: $color-black;
     @extend %round-700;
 }
@@ -144,6 +147,102 @@
     font-size: 12px;
     line-height: 14px;
     color: #000000;
+}
+
+@media(max-width:1200px){
+.scenery__images-img--one img,
+.scenery__images-img--two img{
+    margin-top: 60px;
+}
+.scenery__images-img--three{
+    margin-top: -120px;
+}
+.scenery__content-desc p{
+    max-width: 300px;
+    margin-left: 90px;
+}
+.scenery__content-list{
+    margin-left: 90px;
+}
+}
+
+@media(max-width: 768px){
+    .scenery__bottom{
+        flex-direction: column;
+        align-items: center;
+    }
+    .scenery__bottom-text{
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+    .scenery__bottom-btn{
+        margin-top: 15px;
+    }
+    
+    .scenery__images-img--one{
+        display: none;
+    }
+    .scenery__content{
+        display: none;
+    }
+    .supero__content{
+        flex-direction: column;
+    }
+    .supero__box-title,
+    .supero__box-subtile{
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+    .supero-form{
+        margin-top: 10px;
+    }
+}
+
+@media(max-width: 500px){
+    .scenery__title{
+        font-size: 25px;
+    }
+    .scenery__subtitle{
+        font-size: 20px;
+        line-height: 26px;
+    }
+    .scenery{
+        padding-top: 40px;
+        padding-bottom: 20px;
+    }
+    .scenery__bottom-btn{
+        font-size: 14px;
+        padding: 14px 40px;
+    }
+    .supero__box-title{
+        font-size: 25px;
+        line-height: 30px;
+    }
+    .supero__box-subtile{
+        font-size: 20px;
+        line-height: 22px;
+    }
+    .supero__box-text{
+        margin-top: 10px;
+    }
+    .supero__form-input,
+    .supero__form-btn{
+        width: 300px;
+        width: 100%;
+        padding: 14px 50px;
+    }
+    .supero{
+        padding-top: 35px;
+        padding-bottom: 30px;
+    }
+    .supero-form{
+        margin-top: 20px;
+    }
+    .supero__form-input{
+        margin-right: 0;
+    }
 }
 
 

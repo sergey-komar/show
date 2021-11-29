@@ -52,9 +52,11 @@
 }
 .master__slider-box .slider__arrow-rigth{
     top: 50%;
+    display: none !important;
 }
 .master__slider-box .slider__arrow-left{
     top: 50%;
+    display: none !important;
 }
 .master__slider-text {
     margin-bottom: 15px;
@@ -69,4 +71,27 @@
     display: block;
     margin-left: auto;
     margin-right: auto;
+}
+
+@media(max-width:500px){
+    .master__title{
+        font-size: 25px;
+    }
+    .master{
+        background-position: bottom;
+    }
+    .master__subtitle{
+        font-size: 20px;
+        line-height: 27px;
+    }
+    .master__slider-box .slider__arrow-rigth,
+    .master__slider-box .slider__arrow-left{
+       display: none !important;
+    }
+    .master__button{
+        font-size: 13px;
+        padding: 16px 38px;
+        width: 100%;
+    }
+    
 }

@@ -181,6 +181,7 @@
         text-align: center;
     }
     .super-program__subtitle{
+        margin-bottom: 40px;
         font-size: 20px;
         line-height: 28px;
     }
@@ -190,19 +191,24 @@
     }
     .super-program__slider-big-input{
         width: 270px;
+        width: 100%;
+        padding: 14px 50px;
     }
 .super-program__slider-big-btn{
     width: 275px;
+    width: 100%;
+    padding: 14px 50px;
 }
 .super-program__btn{
     font-size: 15px;
+    padding: 14px 40px;
+    width: 100%;
+
 }
 .super-program__slider{
     margin-top: -30px;
 }
-.super-program__slider-big-title{
-    margin-top: -30px;
-}   
+
 }
 .slider__arrow-l,
 .slider__arrow-r{

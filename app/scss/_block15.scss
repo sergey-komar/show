@@ -10,7 +10,7 @@
     justify-content: center;
 }
 .appeal-content {
-    min-width: 828px;
+     max-width: 828px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -27,7 +27,7 @@
 .appeal-content__box {
     margin-bottom: 90px;
     border-radius: 20px;
-    width: 537px;
+    max-width: 537px;
     height: 650px;
     background: #FFFFFF;
     border-radius: 20px;
@@ -41,7 +41,7 @@
     color: #F79452;
 }
 .appeal-content__box-text {
-    width: 470px;
+    max-block-size: 470px;
     font-size: 28px;
     line-height: 38px;
     text-align: center;
@@ -75,4 +75,51 @@
 .supero.supero-appeal{
     padding-top: 0;
     padding-bottom: 55px;
+}
+
+@media(max-width:1200px){
+    .appeal-img{
+        width: 50%;
+    }
+    .appeal__inner{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+@media(max-width:500px){
+    .appeal-img{
+        width: 100%;
+    }
+    .appeal-content__title{
+        font-size: 25px;
+    }
+    .appeal-content__box-title{
+        font-size: 20px;
+    }
+    .appeal-content-text{
+        font-size: 22px;
+        margin-bottom: 15px;
+    }
+    .appeal-content__box-text{
+        font-size: 16px;
+        line-height: 22px;
+    }
+    .appeal-content__box{
+        margin-bottom: 35px;
+        height: auto;
+       padding: 0 10px 20px 10px;
+    }
+    .appeal-content__video{
+        display: block;
+    }
+    .appeal-content__video-text{
+        text-align: center;
+        font-size: 22px;
+        line-height: 25px;
+    }
+    .appeal-content__video-popup img{
+        width: 200px;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }

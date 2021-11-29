@@ -104,5 +104,42 @@
     color: #414042;
     transform: rotate(-13.35deg);
 }
-.face__bottom-img {
+@media(max-width: 768px){
+    .face__picture,
+    .face__top,
+    .face__center,
+    .face__bottom {
+        flex-direction: column;
+        align-items: center;
+    }             
+}
+@media(max-width: 500px){
+    .face__title{
+        font-size: 25px;
+    }
+    .face{
+        padding-top: 35px;
+    }
+    .face__subtitle {
+        margin-top: -20px;
+        margin-bottom: 15px;
+        font-size: 21px;
+        line-height: 28px;
+        text-align: center;
+    }
+    .face__top-orange,
+    .face__top-blue,
+    .face__center-yellow,
+    .face__bottom-gray,
+    .face__bottom-red,
+    .face__bottom-black,
+    .face__center-text{
+        font-size: 20px;
+    } 
+    .face__center-text{
+        margin-bottom: 0;
+    }
+    .face__bottom-gray{
+        line-height: 25px;
+    }  
 }

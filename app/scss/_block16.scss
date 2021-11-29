@@ -14,22 +14,15 @@
     color: $violet-title;
     @extend %roboto-700;
 }
-.teams-slider {
-}
-.teams-slider__inner {
-   
-}
-.teams-slider__inner-top {
-}
+
 .teams-slider__inner-item {
     display: flex !important; 
     justify-content: space-between;
     column-gap: 70px;
 }
-.teams-slider__img {
-}
+
 .teams-slider__content {
-   width: 580px;
+   max-width: 580px;
 }
 .teams-slider__content-tile {
     margin-bottom: 10px;
@@ -41,6 +34,9 @@
 }
 .teams-slider__content-subtitle {
     margin-bottom: 20px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
     font-size: 30px;
     text-align: center;
     line-height: 40px;
@@ -49,21 +45,19 @@
 }
 .teams-slider__content-box {
     padding: 40px;
-    width: 550px;
+    max-width: 550px;
     height: 300px;
     background: #FFFFFF;
     border-radius: 20px;
 }
 .teams-slider__content-text {
+    
     font-size: 18px;
     line-height: 24px;
     color: $color-black;
     text-align: center;
 }
-.teams-slider__inner-bottom {
-}
-.teams-slider__images {
-}
+
 .teams-slider__inner-name,
 .teams-slider__inner-text {
     margin-top: 10px;
@@ -88,5 +82,55 @@
     bottom: 40%;
     right: 52%;
 }
-.teams-slider__inner-text {
+
+@media(max-width:1200px){
+    .teams-slider .slider__arrow-lef{
+        z-index: 10000;
+    }
+    .teams-slider__inner-item{
+        flex-direction: column;
+        align-items: center;
+    }
+    .slider__arrow-rig{
+        right: 2%;
+        bottom: 65%;
+    }
+    .slider__arrow-lef{
+        left: 2%;
+        bottom: 65%;
+    }
+    .teams-slider__content-box{
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+@media(max-width:768px){
+    .teams-slider__inner-bottom{
+        display: none;
+    }
+    .teams-slider__content-box{
+        max-width: 300px;
+        height: auto;
+       
+    }
+    .teams-slider__content-text{
+        font-size: 14px;
+    }
+}
+@media(max-width:500px){
+    .teams-slider__content-tile{
+        font-size: 25px;
+    }
+    .teams-slider__content-subtitle{
+        font-size: 20px;
+        line-height: 27px;
+    }
+    .slider__arrow-rig{
+        right: 2%;
+        bottom: 80%;
+    }
+    .slider__arrow-lef{
+        left: 2%;
+        bottom: 80%;
+    }
 }

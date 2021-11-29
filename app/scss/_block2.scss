@@ -119,6 +119,10 @@
     .slider__box-item--hit::before{
         display: none;
     }
+    .slider__inner .slider__arrow-rigth,
+    .slider__inner .slider__arrow-left{
+        top: 33%;
+    }
 }
 
 

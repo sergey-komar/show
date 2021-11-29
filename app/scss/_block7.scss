@@ -17,16 +17,18 @@
 .newyear__content {
     display: flex;
     justify-content: space-between;
+   
 }
 .newyear__content-box {
     width: 700px;
 }
 .newyear__content-title {
     margin-bottom: 30px;
-    width: 702px;
+    max-width: 702px;
     font-size: 30px;
     line-height: 40px;
-    color: #414042;    
+    color: #414042; 
+   
 }
 .newyear__content-text {
     margin-bottom: 50px;
@@ -93,6 +95,7 @@
     display: flex;
     justify-content: center;
     column-gap: 20px;
+    flex-wrap: wrap;
 }
 
 .newyear__content-button {
@@ -163,4 +166,104 @@
     line-height: 14px;
     color: #414042;
     @extend %round-500;
+}
+
+
+@media(max-width:1200px){
+    .newyear__content-clown img{
+        display: none;
+        flex-wrap: wrap;
+    }
+    .newyear__content-clown{
+        height: 0;
+    }
+    .newyear__content{
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+    .newyear__content-picture{
+        margin-top: 50px;
+    }
+}
+@media(max-width:768px){
+    .newyear__content-block{
+        flex-direction: column;
+        align-items: center;
+    }
+    .newyear__title{
+        margin-bottom: 0;
+    }
+    .newyear__content-title{
+        text-align: center;
+    }
+    .newyear__content-text{
+        text-align: center;
+    }
+    .newyear-questions{
+        flex-direction: column-reverse;
+    }
+    .newyear-questions__title,
+    .newyear-questions__subtitle{
+        text-align: center;
+    }
+}
+@media(max-width:500px){
+    .newyear__content-title{
+        font-size: 24px;
+        line-height: 30px;
+    }
+    .newyear__title{
+        font-size: 30px;
+    }
+    .newyear__content-text{
+        width: 300px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .newyear__content-img{
+        display: none;
+    }
+    .newyear__content-form{
+        width: 300px;
+    }
+    .newyear__content-input{
+        width: 300px;
+        padding: 14px 50px;
+    }
+    .newyear__content-button{
+        padding: 15px 29px;
+        font-size: 14px;
+    }
+    .newyear{
+        padding-top: 45px;
+        padding-bottom: 40px;
+    }
+    .newyear__content-btn{
+        width: 100%;
+        padding: 14px 50px;
+    }
+    .newyear-questions__title{
+        margin-bottom: 50px;
+        font-size: 24px;
+        line-height: 28px;
+    }
+    .newyear-questions__subtitle{
+        font-size: 18px;
+        line-height: 24px;
+    }
+    .newyear-questions__input,
+    .newyear-questions__button{
+        width: 300px;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 14px 50px;
+    }
+    .newyear-questions__policy{
+        margin-top: 15px;
+    }
+    .newyear-questions__text{
+        margin-bottom: 15px;
+    }
 }

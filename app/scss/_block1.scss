@@ -258,7 +258,7 @@
     .header__form,
     .header__form-input{
         width: 300px;
-      
+        padding: 14px 50px;
     }
     .header__form{
         display: flex;
@@ -268,6 +268,17 @@
     .header__form-before::before,
     .header__form-after::after{
         display: none;
+    }
+    .header__inner-name,
+    .header__inner-btn{
+        display: none;
+    }
+    .header__inner-menu{
+        display: flex;
+        justify-content: space-between;
+    }
+    .menu{
+        order: -1;
     }
 
 }
